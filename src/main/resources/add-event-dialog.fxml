@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<?import javafx.collections.FXCollections?>
+<?import java.lang.String?>
+<DialogPane headerText="Enter Event details" prefHeight="210.0" prefWidth="200.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cs3500.pa05.view.AddEventController">
+    <content>
+        <AnchorPane>
+            <children>
+                <GridPane layoutX="76.0" layoutY="91.0" prefHeight="161.0" prefWidth="496.0">
+                    <children>
+                        <Label prefHeight="17.0" prefWidth="199.0" text="Name" GridPane.columnIndex="0" GridPane.rowIndex="0" />
+                        <TextField fx:id="txtName" text="Enter name" GridPane.columnIndex="1" GridPane.rowIndex="0" />
+                        <Label prefHeight="17.0" prefWidth="199.0" text="Description" GridPane.columnIndex="0" GridPane.rowIndex="1" />
+                        <TextField fx:id="txtDescription" text="Enter description" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                        <Label prefHeight="17.0" prefWidth="199.0" text="Day" GridPane.columnIndex="0" GridPane.rowIndex="2" />
+                        <ComboBox fx:id="cmbDay" prefWidth="150.0" GridPane.columnIndex="1" GridPane.rowIndex="2" >
+                            <items>
+                                <FXCollections fx:factory="observableArrayList">
+                                    <String fx:value="Sunday"/>
+                                    <String fx:value="Monday"/>
+                                    <String fx:value="Tuesday"/>
+                                    <String fx:value="Wednesday"/>
+                                    <String fx:value="Thursday"/>
+                                    <String fx:value="Friday"/>
+                                    <String fx:value="Saturday"/>
+                                </FXCollections>
+                            </items>
+                            <value>
+                                <String fx:value="Sunday"/>
+                            </value>
+                        </ComboBox>
+                        <Label prefHeight="17.0" prefWidth="199.0" text="Start time" GridPane.columnIndex="0" GridPane.rowIndex="3" />
+                        <TextField fx:id="txtStartTime" text="Enter start time" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                        <Label prefHeight="17.0" prefWidth="199.0" text="Duration" GridPane.columnIndex="0" GridPane.rowIndex="4" />
+                        <TextField fx:id="txtDuration" text="Enter duration" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+                    </children>
+                    <columnConstraints>
+                        <ColumnConstraints />
+                        <ColumnConstraints />
+                    </columnConstraints>
+                    <rowConstraints>
+                        <RowConstraints />
+                        <RowConstraints />
+                        <RowConstraints />
+                        <RowConstraints />
+                        <RowConstraints />
+                    </rowConstraints>
+                </GridPane>
+            </children>
+        </AnchorPane>
+    </content>
+    <header>
+        <Label alignment="CENTER" text="Enter Event details">
+            <font>
+                <Font size="20.0" />
+            </font></Label>
+    </header>
+</DialogPane>

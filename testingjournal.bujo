@@ -1,0 +1,53 @@
+{
+  "events" : [ {
+    "id" : 1,
+    "name" : "school",
+    "description" : "do homwork",
+    "day" : "Sunday",
+    "startTime" : "09:00",
+    "duration" : 1
+  }, {
+    "id" : 1,
+    "name" : "College",
+    "description" : "for home",
+    "day" : "Tuesday",
+    "startTime" : "09:00",
+    "duration" : 1
+  } ],
+  "tasks" : [ {
+    "id" : 1,
+    "name" : "homwork",
+    "description" : null,
+    "day" : "Sunday",
+    "isCompleted" : true
+  }, {
+    "id" : 1,
+    "name" : "stuff",
+    "description" : null,
+    "day" : "Monday",
+    "isCompleted" : true
+  }, {
+    "id" : 1,
+    "name" : "computers",
+    "description" : "for ood",
+    "day" : "Sunday",
+    "isCompleted" : true
+  }, {
+    "id" : 1,
+    "name" : "ood hw",
+    "description" : null,
+    "day" : "Tuesday",
+    "isCompleted" : false
+  }, {
+    "id" : 1,
+    "name" : "test",
+    "description" : "study",
+    "day" : "Tuesday",
+    "isCompleted" : false
+  } ],
+  "constraints" : {
+    "maxTasksPerDay" : "2",
+    "maxEventsPerDay" : "2"
+  },
+  "quotes" : null
+}

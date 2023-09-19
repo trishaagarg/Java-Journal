@@ -1,0 +1,8 @@
+{
+  "events" : [ ],
+  "tasks" : [ ],
+  "constraints" : {
+    "maxTasksPerDay" : null,
+    "maxEventsPerDay" : null
+  }
+}

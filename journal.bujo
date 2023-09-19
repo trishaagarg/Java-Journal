@@ -1,0 +1,66 @@
+{
+  "events" : [ {
+    "id" : 1,
+    "name" : "testevent1",
+    "description" : "testdescription",
+    "day" : "Sunday",
+    "startTime" : "10.30",
+    "duration" : 30
+  }, {
+    "id" : 2,
+    "name" : "testevent2",
+    "description" : "test2description",
+    "day" : "Monday",
+    "startTime" : "11.30",
+    "duration" : 45
+  }, {
+    "id" : 1,
+    "name" : "an event on thursday",
+    "description" : "event description",
+    "day" : "Thursday",
+    "startTime" : "10.20",
+    "duration" : 20
+  }, {
+    "id" : 1,
+    "name" : "test event new",
+    "description" : "for running",
+    "day" : "Wednesday",
+    "startTime" : "10.30",
+    "duration" : 40
+  } ],
+  "tasks" : [ {
+    "id" : 1,
+    "name" : "testtask1",
+    "description" : "test 1 description",
+    "day" : "Monday",
+    "isCompleted" : false
+  }, {
+    "id" : 1,
+    "name" : "tasktosave",
+    "description" : "description to save",
+    "day" : "Sunday",
+    "isCompleted" : false
+  }, {
+    "id" : 1,
+    "name" : "A study task",
+    "description" : "study comp science",
+    "day" : "Tuesday",
+    "isCompleted" : false
+  }, {
+    "id" : 1,
+    "name" : "a new task on ",
+    "description" : "running task",
+    "day" : "Tuesday",
+    "isCompleted" : false
+  }, {
+    "id" : 1,
+    "name" : "lol",
+    "description" : "aa",
+    "day" : "Sunday",
+    "isCompleted" : true
+  } ],
+  "constraints" : {
+    "maxTasksPerDay" : "2",
+    "maxEventsPerDay" : "3"
+  }
+}

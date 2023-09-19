@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox alignment="CENTER" prefHeight="659.0" prefWidth="741.0" spacing="20.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cs3500.pa05.view.BulletJournalController">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+    </padding>
+    <HBox fx:id="hBoxHead" prefHeight="69.0" prefWidth="701.0">
+        <children>
+            <AnchorPane prefHeight="50.0" prefWidth="711.0">
+                <children>
+                    <Button layoutX="21.0" layoutY="13.0" onAction="#onLoadJournalClick" text="Load Journal">
+                        <font>
+                            <Font size="15.0" />
+                        </font></Button>
+                    <Button layoutX="143.0" layoutY="12.0" onAction="#onSaveJournalClick" text="Save Journal">
+                        <font>
+                            <Font size="14.0" />
+                        </font></Button>
+                    <Button layoutX="254.0" layoutY="12.0" mnemonicParsing="false" onAction="#onAddEventClick" text="Add Event">
+                        <font>
+                            <Font size="14.0" />
+                        </font></Button>
+                    <Button layoutX="360.0" layoutY="13.0" mnemonicParsing="false" onAction="#onAddTaskClick" text="Add Task">
+                        <font>
+                            <Font size="14.0" />
+                        </font></Button>
+                    <Button layoutX="500.0" layoutY="13.0" mnemonicParsing="false" onAction="#onSetConstraintClick" text="Set Constraints">
+                        <font>
+                            <Font size="14.0" />
+                        </font></Button>
+                    <VBox alignment="TOP_RIGHT" layoutX="611.0" layoutY="12.0" prefHeight="50.0" prefWidth="200.0">
+                        <children>
+
+                        </children>
+                    </VBox>
+                </children>
+            </AnchorPane>
+        </children>
+    </HBox>
+    <HBox fx:id="hBoxContent" prefHeight="570.0" prefWidth="701.0" />
+</VBox>

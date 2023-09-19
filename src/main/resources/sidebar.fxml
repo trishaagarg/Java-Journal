@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.control.ListView?>
+<VBox id="sidebar" prefWidth="200" styleClass="sidebar">
+    <ListView id="taskListView" prefHeight="200">
+        <VBox.vgrow>ALWAYS</VBox.vgrow>
+        <ListView.cellFactory>
+            <TaskListCellFactory />
+        </ListView.cellFactory>
+    </ListView>
+</VBox>
+
+

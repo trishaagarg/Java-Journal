@@ -1,0 +1,123 @@
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox fx:id="root" alignment="CENTER" prefHeight="659.0" prefWidth="741.0" spacing="20.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cs3500.pa05.view.BulletJournalController">
+
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+    </padding>
+    <ScrollPane fx:id="scrollPaneDown" fitToWidth="true" fitToHeight="false">
+
+        <content >
+            <VBox fx:id="stackvd">
+                <HBox fx:id="hBoxHead" prefHeight="69.0" prefWidth="701.0">
+                    <children>
+                        <MenuBar>
+                            <Menu text="File">
+                                <MenuItem  text="Open" onAction="#openBujoFile" />
+                            </Menu>
+                        </MenuBar>
+                        <AnchorPane prefHeight="50.0" prefWidth="711.0">
+                            <children>
+                                <Button fx:id="open" layoutX="21.0" layoutY="13.0" onAction="#onLoadJournalClick" text="Load Journal">
+                                    <font>
+                                        <Font size="15.0" />
+                                    </font>
+                                </Button>
+
+
+                                <Button fx:id="save" layoutX="143.0" layoutY="12.0" onAction="#onSaveJournalClick" text="Save Journal">
+                                    <font>
+                                        <Font size="14.0" />
+                                    </font>
+                                </Button>
+                                <Button fx:id="addEvent" layoutX="254.0" layoutY="12.0" mnemonicParsing="false" onAction="#onAddEventClick" text="Add Event">
+                                    <font>
+                                        <Font size="14.0" />
+                                    </font>
+                                </Button>
+                                <Button  fx:id="addTask" layoutX="360.0" layoutY="13.0" mnemonicParsing="false" onAction="#onAddTaskClick" text="Add Task">
+                                    <font>
+                                        <Font size="14.0" />
+                                    </font>
+                                </Button>
+                                <Button fx:id="setConstraint" layoutX="500.0" layoutY="13.0" mnemonicParsing="false" onAction="#onSetConstraintClick" text="Set Constraints">
+                                    <font>
+                                        <Font size="14.0" />
+                                    </font>
+                                </Button>
+                                <VBox fx:id="testing1" alignment="TOP_RIGHT" layoutX="611.0" layoutY="12.0" prefHeight="50.0" prefWidth="200.0">
+                                    <children>
+                                        <Label fx:id="lblMaxTasksPerDay">
+                                            <font>
+                                                <Font size="16.0" />
+                                            </font>
+                                        </Label>
+                                        <Label fx:id="lblMaxEventsPerDay">
+                                            <font>
+                                                <Font size="16.0" />
+                                            </font>
+                                        </Label>
+                                        <Label fx:id="lblMaxTasksPerWeek" >
+                                            <font>
+                                                <Font size="16.0" />
+                                            </font>
+                                        </Label>
+                                        <Label fx:id="lblMaxEventsPerWeek" >
+                                            <font>
+                                                <Font size="16.0" />
+                                            </font>
+                                        </Label>
+                                    </children>
+                                </VBox>
+                            </children>
+                        </AnchorPane>
+                    </children>
+                </HBox>
+                <HBox prefHeight="570.0" prefWidth="701.0">
+                    <VBox spacing="10.0">
+                        <Label  fx:id="quotesOrNotes" text="Quote or Note:"/>
+                        <TextArea fx:id="txtQuoteOrNote" prefColumnCount="20" prefRowCount="4"/>
+                        <Button text="Save" onAction="#onSaveQuoteOrNoteClick"/>
+                    </VBox>
+                    <ScrollPane fx:id="scrollPane"  fitToWidth="false" prefViewportWidth="701.0">
+                        <HBox fx:id="hBoxContent" spacing="10.0"/>
+                    </ScrollPane>
+                    <ComboBox fx:id="themeComboBox" prefWidth="200.0"></ComboBox>
+                    <Label fx:id="theme" text="Theme">
+                        <font>
+                            <Font size="16.0" />
+                        </font>
+                    </Label>
+
+                    <VBox spacing="10.0">
+                        <Label fx:id="lblSavedQuote" text="">
+                            <font>
+                                <Font size="16.0" />
+                            </font>
+                        </Label>
+                    </VBox>
+                </HBox>
+
+                <HBox prefHeight="40.0" prefWidth="701.0">
+                    <TextField fx:id="searchField" promptText="Search tasks" />
+                </HBox>
+                <ListView fx:id="taskListView" />
+
+                <VBox alignment="CENTER" spacing="10.0">
+                    <Label fx:id="lblStatistics" text="Total Events: 0&#10;Total Tasks: 0&#10;Task Completion: 0.00%">
+                        <font>
+                            <Font size="16.0" />
+                        </font>
+                    </Label>
+                </VBox>
+
+                <Label fx:id="tasksRemainingLabel" layoutX="10.0" layoutY="10.0" text="Tasks Remaining: 0" />
+                <Button fx:id="openTemplateButton" text="Open Template" onAction="#openTemplateButtonClick" />
+
+            </VBox>
+        </content>
+    </ScrollPane>
+</VBox>
